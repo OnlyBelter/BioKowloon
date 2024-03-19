@@ -1,0 +1,73 @@
+# pyproject.toml
+
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "BioKowloon"
+version = "0.1"
+description = "A toolkit for multi-omics data analysis"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.8"
+authors = [
+    { name = "OnlyBelter", email = "onlybelter@outlook.com" },
+]
+keywords = [
+    "multi-omics",
+    "single-cell",
+    "scRNA-seq",
+]
+classifiers = [
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: BSD License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Typing :: Typed",
+]
+dependencies = [
+    "scanpy==1.9.8",
+    "pandas==2.2.1",
+    "SciencePlots",
+    "tables>3.6.1",
+    "matplotlib",
+    "seaborn",
+    "numpy",
+    "scipy",
+    "scikit-learn",
+]
+#dynamic = ["version"]
+
+[project.urls]
+#Documentation = "https://deside.readthedocs.io/"
+Homepage = "https://github.com/OnlyBelter/BioKowloon"
+Source = "https://github.com/OnlyBelter/BioKowloon"
+Tracker = "https://github.com/OnlyBelter/BioKowloon/issues"
+
+# https://realpython.com/pypi-publish-python-package/#version-your-package
+[tool.bumpver]
+current_version = "0.1.0"
+version_pattern = "MAJOR.MINOR.PATCH"
+commit_message = "bump version {old_version} -> {new_version}"
+commit = true
+tag = true
+push = false
+
+[tool.bumpver.file_patterns]
+"pyproject.toml" = [
+    'current_version = "{version}"',
+]
+"setup.py" = [
+    "{version}",
+    "{pep440_version}",
+]
+"README.rst" = [
+    "{version}",
+    "{pep440_version}",
+]
+"README.md" = [
+    "{version}",
+    "{pep440_version}",
+]
