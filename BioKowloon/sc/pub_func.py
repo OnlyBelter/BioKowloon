@@ -48,11 +48,13 @@ def set_fig_style(font_family=None, font_size=None):
     plt.close('all')
 
 
-def log2_transform(df):
+def log2_transform(df) -> pd.DataFrame:
     """
     log2 transform expression values (plus 1)
-    :param df:
-    :return:
+
+    :param df: a dataframe with expression values, cells by genes
+
+    :return: a dataframe with log2 transformed values
     """
     df = df.astype(np.float64)
     df = np.log2(df + 1)

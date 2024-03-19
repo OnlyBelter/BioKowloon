@@ -37,6 +37,7 @@ dependencies = [
     "numpy",
     "scipy",
     "scikit-learn",
+    "furo",
 ]
 #dynamic = ["version"]
 
