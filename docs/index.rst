@@ -22,15 +22,15 @@ Contents
 ------------------------------
 - `Installation <https://biokowloon.readthedocs.io/en/latest/installation.html>`_
 - `Usage <https://biokowloon.readthedocs.io/en/latest/usage.html>`_
-- `Single Cell <https://biokowloon.readthedocs.io/en/latest/single_cell.html>`_
+- `Single Cell <https://biokowloon.readthedocs.io/en/latest/sc/single_cell.html>`_
 
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :hidden:
 
    installation.md
-   single_cell.md
+   functions.md
    changelog.md
    contact.md
    GitHub repository <https://github.com/OnlyBelter/BioKowloon>

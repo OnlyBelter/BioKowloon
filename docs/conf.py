@@ -12,7 +12,8 @@
 import os
 import sys
 # import sphinx_book_theme
-sys.path.insert(0, os.path.abspath(r'..'))
+sys.path.insert(0, os.path.abspath(r'../biokowloon'))
+# sys.path.append(os.path.abspath(r'..'))
 
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
