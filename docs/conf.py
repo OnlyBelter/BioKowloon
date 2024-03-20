@@ -16,7 +16,7 @@ import sys
 from pathlib import Path
 HERE = Path(__file__).parent
 sys.path[:0] = [str(HERE.parent), str(HERE / 'extensions')]
-# import biokowloon
+import biokowloonx
 
 # sys.path.append(os.path.abspath(r'..'))
 
@@ -84,3 +84,4 @@ html_css_files = [
 source_suffix = ['.rst', '.md']
 
 fontawesome_included = True
+# print(biokowloon.sc.pub_func.__doc__)
