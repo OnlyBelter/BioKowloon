@@ -17,7 +17,7 @@ build:
 
 # Build documentation in the docs/ directory with Sphinx
 sphinx:
-  fail_on_warning: true
+  fail_on_warning: true  # this setting is used by scanpy
   configuration: docs/conf.py
 
 # Optionally build your docs in additional formats such as PDF
